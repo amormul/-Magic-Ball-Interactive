@@ -1,2 +1,16 @@
-# -Magic-Ball-Interactive
-🎱 Magic Ball Interactive is a fun web app that simulates the classic fortune-telling experience! ✨ Ask a question and receive playful, random responses from the magic eight ball. 🪄 Built with PHP using OOP, it features an animated magic ball that shakes upon submission. Perfect for a little fun or guidance! 🚀
+# 🎱 Magic Ball Interactive
+
+**Magic Ball Interactive** is a simple yet engaging web application that brings the classic fortune-telling experience to life! ✨ Users can ask questions and receive playful, random responses from the magic eight ball. 
+
+## Features
+
+- 🪄 Ask any question and get a random answer.
+- 💫 Animated magic ball that shakes when you submit your query.
+- 🚀 Built with PHP using an object-oriented programming approach.
+- 🎨 Clean and elegant design for an enjoyable user experience.
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/magic-ball-interactive.git

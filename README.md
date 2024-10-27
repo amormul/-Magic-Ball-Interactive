@@ -13,4 +13,4 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/magic-ball-interactive.git
+   git clone https://github.com/amormul/magic-ball-interactive.git

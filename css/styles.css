@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #525c61; /* Світло-сірий фон */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: white; /* Білий фон для контейнера */
+    padding: 40px;
+    border-radius: 15px; /* Закруглені краї */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Тінь для глибини */
+}
+
+h1 {
+    font-size: 2.5em; /* Збільшений шрифт заголовка */
+    color: #333; /* Темний колір заголовка */
+    margin-bottom: 20px;
+}
+
+.ball-container {
+    position: relative; /* Для позиціонування внутрішнього шару */
+    margin: 20px auto; /* Центрування */
+}
+
+.magic-ball {
+    width: 200px; /* Збільшений розмір кулі */
+    height: 200px; /* Збільшений розмір кулі */
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 15px; /* Зменшено до 20px */
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Тінь для сфери */
+}
+
+.inner-ball {
+    width: 140px; /* Білий шар всередині */
+    height: 140px; /* Білий шар всередині */
+    border-radius: 50%;
+    background-color: white; /* Білий фон для внутрішнього шару */
+    color: black; /* Чорний текст всередині */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em; /* Розмір шрифту для тексту */
+}
+
+.response {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #333; /* Темний колір тексту */
+}
+
+form {
+    margin-bottom: 20px; /* Відступ для форми */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px; /* Відступ між міткою та полем вводу */
+    font-size: 1.2em; /* Розмір шрифту для мітки */
+    color: #555; /* Сірий колір мітки */
+}
+
+input[type="text"] {
+    width: 100%; /* Ширина поля вводу */
+    padding: 10px; /* Внутрішній відступ */
+    border-radius: 5px; /* Закруглені краї */
+    border: 1px solid #ccc; /* Сіра обводка */
+    font-size: 1em; /* Розмір шрифту для поля вводу */
+    margin-bottom: 20px; /* Відступ знизу */
+}
+
+button {
+    padding: 10px 20px; /* Внутрішній відступ для кнопки */
+    border: none; /* Без обводки */
+    border-radius: 5px; /* Закруглені краї для кнопки */
+    background-color: #007bff; /* Синій фон для кнопки */
+    color: white; /* Білий текст */
+    font-size: 1em; /* Розмір шрифту для кнопки */
+    cursor: pointer; /* Курсор при наведенні */
+    transition: background-color 0.3s; /* Плавний перехід кольору */
+}
+
+button:hover {
+    background-color: #0056b3; /* Темніший синій при наведенні */
+}
+
+.shake {
+    animation: shake 0.5s;
+    animation-iteration-count: 3;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translate(0); }
+    25% { transform: translate(-5px, 0); }
+    50% { transform: translate(5px, 0); }
+    75% { transform: translate(-5px, 0); }
+}

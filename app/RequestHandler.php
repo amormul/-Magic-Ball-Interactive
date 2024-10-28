@@ -1,17 +1,37 @@
 <?php
 
+/**
+ * Class RequestHandler handles user requests.
+ */
 class RequestHandler {
-    public function handleRequest() {
+    /**
+     * Handles the incoming request and displays the response.
+     */
+    public function handleRequest(): void {
+        $response = null;
+
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $magicBall = new MagicBall();
-            $response = $magicBall->getRandomResponse();
-            $this->showPage($response);
-        } else {
-            $this->showPage();
+            $validator = new Validator();
+            $question = $_POST['question'] ?? '';
+
+            // Validate the question
+            if ($validator->validateQuestion($question)) {
+                $magicBall = new MagicBall();
+                $response = $magicBall->getRandomResponse();
+            } else {
+                $response = "The question must not be empty";
+            }
         }
+
+        $this->showPage($response); // Display the page with the response
     }
 
-    private function showPage($response = null) {
-        include 'app/views/pages/home.php';
+    /**
+     * Displays the page with an optional response.
+     *
+     * @param string|null $response The response to display.
+     */
+    private function showPage(?string $response = null): void {
+        include 'app/views/template/index_template.php';
     }
 }

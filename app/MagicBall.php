@@ -1,17 +1,34 @@
 <?php
+
+/**
+ * Class MagicBall generates a random response to user questions.
+ */
 class MagicBall
 {
-    private $responses;
+    /**
+     * @var array List of possible responses.
+     */
+    private array $responses;
+
+    /**
+     * Initializes the MagicBall class with a set of responses.
+     */
     public function __construct() {
         $this->responses = [
-            "Так",
-            "Ні",
-            "Можливо",
-            "Не впевнений",
-            "Спробуй ще раз"
+            "Yes",
+            "No",
+            "Maybe",
+            "Not sure",
+            "Try again"
         ];
     }
-    public function getRandomResponse() {
+
+    /**
+     * Returns a random response.
+     *
+     * @return string A random response from the list.
+     */
+    public function getRandomResponse(): string {
         return $this->responses[array_rand($this->responses)];
     }
 }

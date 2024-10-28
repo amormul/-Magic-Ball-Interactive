@@ -9,6 +9,9 @@
 - 🚀 Built with PHP using an object-oriented programming approach.
 - 🎨 Clean and elegant design for an enjoyable user experience.
 
+## Screenshots
+![image](https://github.com/user-attachments/assets/db4f1796-9fd5-463d-a878-76cd8e42a345)
+
 ### Installation
 
 1. Clone the repository:
